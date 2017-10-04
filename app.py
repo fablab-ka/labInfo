@@ -8,8 +8,8 @@ app = Bottle()
 
 
 pageList = [
-    {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7', 'time': 10},
-    {'url': 'http://www.tagesschau.de', 'time': 5},
+    {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7', 'time': 15},
+    {'url': 'http://www.clocktab.com/', 'time': 10},
 ]
 
 @app.get('/')
