@@ -12,6 +12,11 @@ pageList = [
     {'url': 'https://walls.io/7EoLAz3zg', 'time': 15},
 ]
 
+@app.get('/<device>')
+def kvv_search_device(device):
+    # newNumber = (pageNumber + 1) % len(pageList);
+    return template('iframe_page')
+
 @app.get('/')
 def kvv_search():
     # newNumber = (pageNumber + 1) % len(pageList);
