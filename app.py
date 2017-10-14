@@ -9,7 +9,7 @@ app = Bottle()
 
 pageList = [
     {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7&entries=9', 'time': 15},
-    {'url': 'https://walls.io/7EoLAz3zg', 'time': 15},
+    {'url': 'http://fablabka.tweetwally.com', 'time': 15},
 ]
 
 @app.get('/<device>')
