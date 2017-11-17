@@ -8,14 +8,18 @@ app = Bottle()
 
 
 pageList = [
-    {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7&entries=9', 'time': 15},
-    {'url': 'http://fablabka.tweetwally.com', 'time': 15},
+    {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7&entries=9', 'time': 5},
+    {'url': '/twitterwall', 'time': 15},
 ]
 
 @app.get('/<device>')
 def kvv_search_device(device):
     # newNumber = (pageNumber + 1) % len(pageList);
     return template('iframe_page')
+
+@app.get('/twitterwall')
+def twitterwall():
+    return template('twitterwall.html')
 
 @app.get('/')
 def kvv_search():
