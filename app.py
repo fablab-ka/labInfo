@@ -8,8 +8,8 @@ app = Bottle()
 
 
 pageList = [
-    {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7&entries=9', 'time': 5},
-    {'url': '/twitterwall', 'time': 15},
+    {'url': 'http://192.168.1.194:8080/kvv_table?station=de:8212:7&entries=9', 'time': 7},
+    {'url': '/twitterwall', 'time': 7},
 ]
 
 @app.get('/<device>')
