@@ -3,6 +3,7 @@ var currentEntry = 0;
 var list = "";
 
 function timeHandler() {
+//    alert(currentEntry);
 	frame = document.getElementById("frame_" + currentEntry)
 	if(!frame) {
 	    setTimeout(timeHandler, 1000);
@@ -15,8 +16,8 @@ function timeHandler() {
 	}
 	newframe = document.getElementById("frame_" + currentEntry)
 
-    newframe.style.display = "none";
-	frame.style.display = "block";
+    newframe.style.display = "block";
+	frame.style.display = "none";
 //	frame.src = frame.src;
 
 	//set timer
@@ -37,7 +38,7 @@ function createFrames() {
             frame.setAttribute("border", 0);
             frame.setAttribute("frameborder", 0);
             frame.setAttribute("seamless", "seamless");
-            frame.style.display = "block"; //"block"=hide, "none"=show
+            frame.style.display = "none"; //"block"=hide, "none"=show
             document.body.appendChild(frame);
         }
         setTimeout(createFrames, 60 * 1000 * 3); //reload content all 3 minutes
