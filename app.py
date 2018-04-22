@@ -8,7 +8,7 @@ app = Bottle()
 
 
 pageList = [
-    {'url': 'http://odoo.lab.flka.de:8080//kvv_table?station=de:8212:7&entries=9', 'time': 5},
+    {'url': 'http://odoo.lab.flka.de:8080/kvv_table?station=de:8212:7&entries=9', 'time': 5},
     {'url': '/twitterwall', 'time': 5},
 ]
 
